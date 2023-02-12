@@ -23,8 +23,8 @@
             </div>
 
             <div class="container search-bar">
-                <input id="search" type="text" placeholder="Search...">
-                <input id="search-button" type="button" value="GO" onclick="search(document.getElementById('search').value)">
+                <input id="search-text" name="search-bar" type="text" placeholder="Search..." onkeyup="searchInput()">
+                <input id="search-button" type="button" value="GO" onclick="highLight(document.getElementById('search-text').value)">
             </div>
 
         </div>
@@ -54,122 +54,167 @@
     
     <section class="diagonal">
         <div class="wrapper">
+
     
-            <div class="card">
-                <div class="card-img">
-                    <img class="card-img" src="img/code-brackets.jpg" alt="picture of 3D code brackets">
-                </div>
-                <div class="card-title">
-                    <h2>Week 1: 09/01/2023</h2>
-                </div>
-                <div class="card-body">
-    
+            <div class="scene scene-card">
+                <div class="card">
+                    <div class="card-face card-face-front">
+                    <div class="card-img">
+                        <img class="card-img" src="img/code-brackets.jpg" alt="code in brackets">
+                    </div>
+                    <div class="card-title">
+                        <h2>Week 1: 09/01/2023</h2>
+                    </div>
+                    <div class="card-body">
                     <p>
                         Week 1 was spent refreshing my memory with the basics of HTML, CSS and GIT.<br>
                         This time round I want to know everything properly, and the how and why of things under the hood.<br>
+                        <span class="span-links">Links on the back of this card!</span>
                     </p>
                     <p><strong>
-                    GIT Basics: &#10003;<br>
-                    HTML Foundations: &#10003;<br>
-                    CSS Foundations: &#10003;<br>
-                    </strong></p>
-                    <p>
-                    Main Links of the Week:<br>
-    
-                    <a class="links" href="https://www.youtube.com/watch?v=DVRQoVRzMIY">Tech With Tim: GIT Tutorial for Beginners</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=LGQuIIv2RVA&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-">Kevin Powell: HTML and CSS for Beginners</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=uEfH6qnFF6Y">Kevin Powell: Margin and Padding Deep Dive</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=zGiirUiWslI">Kevin Powell: Before and After pseudo elements explained</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=jx5jmI0UlXU">Web Dev Simplified: Learn CSS Position in 9 Minutes</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=rIO5326FgPE">Web Dev Simplified: Learn CSS Box Model in 8 Minutes</a>
+                        GIT Basics: &#10003;<br>
+                        HTML Foundations: &#10003;<br>
+                        CSS Foundations: &#10003;<br>
+                    </strong>
                     </p>
-                    
+                    </div>
+                </div>
+           
+                    <div class="card-face card-face-back">
+                    <div class="card-title-back">
+                        <h2>Links of the Week:</h2>
+                    </div>
+            
+                    <div class="link-wrap">
+                        <a class="links" href="https://www.youtube.com/watch?v=DVRQoVRzMIY">Tech With Tim: GIT Tutorial for Beginners</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=LGQuIIv2RVA&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-">Kevin Powell: HTML and CSS for Beginners</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=uEfH6qnFF6Y">Kevin Powell: Margin and Padding Deep Dive</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=zGiirUiWslI">Kevin Powell: Before and After pseudo elements explained</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=jx5jmI0UlXU">Web Dev Simplified: Learn CSS Position in 9 Minutes</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=rIO5326FgPE">Web Dev Simplified: Learn CSS Box Model in 8 Minutes</a>
+                    </div>
+                    </div>
                 </div>
             </div>
-    
-            <div class="card">
-                <div class="card-img">
-                    <img class="card-img" src="img/flex-zombies.jpg" alt="picture of game called flex zombies">
-                </div>
-                <div class="card-title">
-                    <h2>Week 2: 16/01/2023</h2>
-                </div>
-                <div class="card-body">
+
+
+              
+            <div class="scene scene-card">
+                <div class="card">
+                    <div class="card-face card-face-front">
+                    <div class="card-img">
+                        <img class="card-img" src="img/flex-zombies.jpg" alt="flexbox zombies">
+                    </div>
+                    <div class="card-title">
+                        <h2>Week 2: 16/01/2023</h2>
+                    </div>
+                    <div class="card-body">
                     <p>
                         Started learning Flexbox. Following the Odin tutorials and the extra ones that are given in the curriculum. Also been watching some videos on the subject to make sure my knowledge is solid. Flexbox Zombies was an awesome experience, because it really helped me make the knowledge stick.<br>
+                        <span class="span-links">Links on the back of this card!</span>
                     </p>
                     <p><strong>
-                    Flexbox: &#10003;<br>
-                    Landing Page Project: &#10003;<br>
-                    </strong></p>
-                    <p>
-                    Main Links of the Week:<br>
-    
-                    <a class="links" href="https://mastery.games/flexboxzombies/">Mastery Games: Flex Zombies</a>
-                    <a class="links" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Complete Guide to Flexbox</a>
+                        Flexbox: &#10003;<br>
+                        Landing Page Project: &#10003;<br>
+                    </strong>
                     </p>
-                    
+                    </div>
+                </div>
+            
+                    <div class="card-face card-face-back">
+                    <div class="card-title-back">
+                        <h2>Links of the Week:</h2>
+                    </div>
+            
+                    <div class="link-wrap">
+                        <a class="links" href="https://mastery.games/flexboxzombies/">Mastery Games: Flex Zombies</a>
+                        <a class="links" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Complete Guide to Flexbox</a>
+                    </div>
+                    </div>
                 </div>
             </div>
-    
-            <div class="card">
-                <div class="card-img">
-                    <img class="card-img" src="img/js-img.jpg" alt="picture of javascript logo on wood">
-                </div>
-                <div class="card-title">
-                    <h2>Week 3: 23/01/2023</h2>
-                </div>
-                <div class="card-body">
+
+            
+            
+            <div class="scene scene-card">
+                <div class="card">
+                    <div class="card-face card-face-front">
+                    <div class="card-img">
+                        <img class="card-img" src="img/js-img.jpg" alt="javascript logo on wood">
+                    </div>
+                    <div class="card-title">
+                        <h2>Week 3: 23/01/2023</h2>
+                    </div>
+                    <div class="card-body">
                     <p>
                         Oh boy ... has my brain been fried this week. Unlike HTML and CSS, which I had prior experience with (tiny experience but still), Javascript I have never worked with, so everything was new and scary. After the first two days of pure confusion and near panic, I started looking for extra learning sources on Youtube and Apps on my phone.<br>
+                        <span class="span-links">Links on the back of this card!</span>
                     </p>
                     <p><strong>
-                    Fundamentals Part 1: &#10003;
-                    Fundamentals Part 2: &#10003;
-                    </strong></p>
-                    <p>
-                    Phone Apps:<br>
-                    SoloLearn (Free Version)<br>
-                    Learn Javascript Pro (by CodeLiber)<br>
+                        Fundamentals Part 1: &#10003;<br>
+                        Fundamentals Part 2: &#10003;<br>
+                    </strong>
                     </p>
+                    </div>
+                </div>
+            
+                    <div class="card-face card-face-back">
+                    <div class="card-title-back">
+                        <h2>Links of the Week:</h2>
+                    </div>
                     <p>
-                    Main Links of the Week:<br>
-    
-                    <a class="links" href="https://www.youtube.com/watch?v=hdI2bqOjy3c&t=1444s">Playlist: Traversy Media</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=uli67N4Z03Y">Playlist: Dani Krossing</a>
-                    <a class="links" href="hhttps://www.youtube.com/watch?v=qEzT7972yUA&list=PL_c9BZzLwBRLVh9OdCBYFEql6esA6aRsi&index=25">Playlist: Caleb Curry</a>
+                        Phone Apps:<br>
+                        SoloLearn (Free Version)<br>
+                        Learn Javascript Pro (by CodeLiber)<br>
                     </p>
-                    
+                    <div class="link-wrap">
+                        <a class="links" href="https://www.youtube.com/watch?v=hdI2bqOjy3c&t=1444s">Playlist: Traversy Media</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=uli67N4Z03Y">Playlist: Dani Krossing</a>
+                        <a class="links" href="hhttps://www.youtube.com/watch?v=qEzT7972yUA&list=PL_c9BZzLwBRLVh9OdCBYFEql6esA6aRsi&index=25">Playlist: Caleb Curry</a>
+                    </div>
+                    </div>
                 </div>
-            </div>
-    
-            <div class="card">
-                <div class="card-img">
-                    <img class="card-img" src="img/js-bugs.png" alt="abstract picture of javascript bugs">
-                </div>
-                <div class="card-title">
-                    <h2>Week 4: 30/01/2023</h2>
-                </div>
-                <div class="card-body">
+            </div> 
+
+            
+                
+            <div class="scene scene-card">
+                <div class="card">
+                    <div class="card-face card-face-front">
+                    <div class="card-img">
+                        <img class="card-img" src="img/js-bugs.png" alt="javascript bugs in code">
+                    </div>
+                    <div class="card-title">
+                        <h2>Week 4: 30/01/2023</h2>
+                    </div>
+                    <div class="card-body">
                     <p>
-                    The destruction of my brain continues. Many videos have been watched to make sure I fully understood the material. I have also found that once I tried to pretend and teach the topic, the knowledge seemed to stick a lot better.<br>
+                        The destruction of my brain continues. Many videos have been watched to make sure I fully understood the material. I have also found that once I tried to pretend and teach the topic, the knowledge seemed to stick a lot better.<br>
+                        <span class="span-links">Links on the back of this card!</span>
                     </p>
                     <p><strong>
-                    Javascript Dev Tools: &#10003;
-                    Fundamentals Part 3: &#10003;
-                    </strong></p>
-                    <p>
-                    Main Links of the Week:<br>
-    
-                    <a class="links" href="https://www.youtube.com/watch?v=wRrofv4WUcU">Monsterlessons Academy: What is DOM in 10 Minutes</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=uiv3oLsHbaI">WhatsDev: Learn Javascript Functions</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=FioqUnOGlq8">CS Learning: Javascript - Functions - Return</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=h33Srr5J9nY">Web Dev Simplified: Javascript Arrow Functions</a>
-                    <a class="links" href="https://www.youtube.com/watch?v=thXp0_py9X4&t=697s">Colt Steele: Javascript Arrow Functions</a>
+                        Javascript Dev Tools: &#10003;<br>
+                        Fundamentals Part 3: &#10003;<br>
+                    </strong>
                     </p>
-                    
+                    </div>
                 </div>
-            </div>
+    
+                    <div class="card-face card-face-back">
+                    <div class="card-title-back">
+                        <h2>Links of the Week:</h2>
+                    </div>
+
+                    <div class="link-wrap">
+                        <a class="links" href="https://www.youtube.com/watch?v=wRrofv4WUcU">Monsterlessons Academy: What is DOM in 10 Minutes</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=uiv3oLsHbaI">WhatsDev: Learn Javascript Functions</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=FioqUnOGlq8">CS Learning: Javascript - Functions - Return</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=h33Srr5J9nY">Web Dev Simplified: Javascript Arrow Functions</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=thXp0_py9X4&t=697s">Colt Steele: Javascript Arrow Functions</a>
+                    </div>
+                    </div>
+                </div>
+            </div>                     
     
     
         </div>
@@ -177,16 +222,60 @@
 
     <section class="diagonal-transparent">
         <div class="wrapper">
-            <h2 class="card-title">Week #</h2>
-            <p>There is going to be text here.</p>
+ 
+            
+
+            <div class="scene scene-card">
+                <div class="card">
+                    <div class="card-face card-face-front">
+                    <div class="card-img">
+                        <img class="card-img" src="img/rps.jpg" alt="rock paper scissors">
+                    </div>
+                    <div class="card-title">
+                        <h2>Week 5: 06/02/2023</h2>
+                    </div>
+                    <div class="card-body">
+                    <p>
+                        I have been both looking forward to this week and scared of it. Now that this week is over and I have just completed my first project, I can safely say I was right to be a little scared. I have for sure seen where my shortcomings were, had to go back and learn more about functions and loops. Parameters, arguments,  and returns tripped me up. But in the end when my code was working, that feeling is amazing!<br>
+                        <span class="span-links">Links on the back of this card!</span>
+                    </p>
+                    <p><strong>
+                        Problem Solving: &#10003;<br>
+                        Understanding Errors: &#10003;<br>
+                        Project:<br>
+                        Rock Paper Scissors: &#10003;<br>
+                        </strong>
+                    </p>
+                    </div>
+                </div>
+    
+                    <div class="card-face card-face-back">
+                    <div class="card-title-back">
+                        <h2>Links of the Week:</h2>
+                    </div>
+
+                    <div class="link-wrap">
+                        <a class="links" href="https://www.youtube.com/watch?v=W6QaDqud66Y">Steve Griffith: Introduction to Functions in JavaScript</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=dxbsN6_C5PI&t=303s">Steve Griffith: JavaScript Function Parameters</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=jZLhVTgwg54&t=16s">Steve Griffith: How to Make a Function Run</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=qed2cjdF-30&t=21s">Steve Griffith: JavaScript Function Return Statements</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=GwU1TAC2BDY&t=14s">Steve Griffith: What do JS functions really return? And why?</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=LuAWFium1nk">dcode: Learn JavaScript Loops in 10 Minutes</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=leMzF0esu38">developedbyed: Javascript For Loop and While Loop | Javascript Tutorial For Beginners</a>
+                        <a class="links" href="https://www.youtube.com/watch?v=Kn06785pkJg">codeSTACKr: JavaScript Loops Made Easy</a>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+
+
         </div>
     </section>
     
     <section class="diagonal">
-        <div class="wrapper">
-            <h2 class="card-title">Week #</h2>
-            <p>There is going to be text here.</p>
-        </div>
+
+ 
+
     </section>
 
 </body>

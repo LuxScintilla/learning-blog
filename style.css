@@ -6,7 +6,7 @@
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
     background-image: url("img/desaturated-mountains.jpg");
     color: #101419;
@@ -54,12 +54,26 @@ body {
     justify-content: flex-end;
 }
 
-#search {
+#search-text {
     padding: 10px;
     background-color: #fafaf1;
     opacity: 0.5;
     border-style: none;
 }
+
+input[type=text] {
+    width: 50%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+ }
+
+ input[type=text]:focus {
+    width: 100%;
+ }
+
+ .highlight {
+    background-color: yellow;
+  }
 
 #search-button {
     background-color: #39474f;
@@ -105,27 +119,43 @@ body {
     font-size: 14px;
 }
 
-span {
+/* span {
     margin: 5px;
     padding: 0px 5px;
     border-radius: 5px;
     font-size: 12px;
-}
+} */
 
 .class-html {
+    margin: 5px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 12px;
     background-color: #ff4200;
     margin-left: 65px;
 }
 
 .class-css {
+    margin: 5px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 12px;
     background-color: #0038cf;
 }
 
 .js {
+    margin: 5px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 12px;
     background-color: #cfb900;
 }
 
 .react {
+    margin: 5px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-size: 12px;
     background-color: #20a1b9;
 }
 
@@ -143,6 +173,8 @@ section {
 }
 
 .diagonal {
+    display: flex;
+    justify-content: center;
     position: relative;
     isolation: isolate;
 }
@@ -185,8 +217,17 @@ section {
     margin: 0px;
 }
 
+.card-big {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    max-width: 492px;
+    background-color: #fafaf1;
+    margin: 0px;
+}
+
 .card-img {
-    width: 246px;
+    max-width: 244px;
     height: auto;
     margin: 0px;
 }
@@ -197,22 +238,36 @@ section {
     line-height: 0.5em;
     color: #fafaf1;
     text-align: center;
+    padding: 2px;
     margin-top: -5px;
 }
 
+.card-title-back {
+    background-color: #39474f;
+    font-size: 14px;
+    line-height: 0.5em;
+    color: #fafaf1;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
 .card-body {
-    padding: 0px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
 }
 
 .links {
+    align-self: center;
     display: block;
     text-decoration: none;
     font-size: 14px;
     color: #101419;
     background-color: #a8837d;
     padding: 5px 20px;
-    width: 232px;
-    margin-bottom: 5px;
+    width: 230px;
+    margin: 5px 0px 5px 0px;
 }
 
 .links:visited{
@@ -223,3 +278,60 @@ section {
     background-color: #fbb193;
     color: #101419;
 }
+
+.link-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* START OF ANIMATED CARDS */
+
+.scene {
+    display: inline-block;
+    width: 246px;
+    height: 640px;
+    margin: 40px 0;
+    perspective: 600px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-face-front {
+    background-color: #fafaf1;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+  }
+  
+  .card-face-back {
+    background-color: #fafaf1;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+    transform: rotateY(180deg);
+  }
+
+  .span-links {
+    font-weight: 14px;
+    background-color:#fbb193;
+    padding: 0px 5px;
+  }
