@@ -1,99 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Journey Blog D2</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="javascript.js"></script>
-</head>
-<body>
-    <section class="welcome">
-
-        <header class="header">
-            <div class="header-wrapper">
-
-                <div class="logo">
-                    <img class="dragon-logo" src="img/lux-circle-dragon-dark.png" alt="dragon logo">
-                </div>
-
-                <nav class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contact</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="#">Notes</a>
-                </nav>
-
-            </div>
-        </header>
-
-        <div class="welcome-wrapper">
-
-            <div class="welcome-text">
-
-                <div class="top-title">
-                    <div class="brackets">
-                        <p>&lt;</p>
-                    </div>
-                    <div class="my-name">
-
-                        <div class="name">
-                            <span>E</span>
-                            <span>K</span>
-                            <span>A</span>
-                            <span>T</span>
-                            <span>E</span>
-                            <span>R</span>
-                            <span>I</span>
-                            <span>N</span>
-                            <span>A</span>
-                            <span>&nbsp;</span>
-                            <span>F</span>
-                            <span>U</span>
-                            <span>R</span>
-                            <span>M</span>
-                            <span>A</span>
-                            <span>N</span>
-                        </div>
-                        <div class="prof">
-                            <span>F</span>
-                            <span>R</span>
-                            <span>O</span>
-                            <span>N</span>
-                            <span>T</span>
-                            <span>E</span>
-                            <span>N</span>
-                            <span>D</span>
-                            <span>D</span>
-                            <span>E</span>
-                            <span>V</span>
-                            <span>E</span>
-                            <span>L</span>
-                            <span>O</span>
-                            <span>P</span>
-                            <span>E</span>
-                            <span>R</span>
-                        </div>
-
-                    </div>
-                    <div class="brackets">
-                        <p>&gt;</p>
-                    </div>
-                </div>
-
-                <p class="intro">
-                    Hello, and welcome. You have arrived at the place where I keep everything about my web development journey. Here you will find my portfolio with my projects, my blog with my weekly learning recaps, and other things relating to the world of web dev.
-                </p>
-
-                <button class="learn-more">Curriculum Vitae</button>
-
-            </div>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E Furman Learning Blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="redesign.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="nav-header-container">
+      <nav>
+        <div class="nav-container">
+          <div class="nav-logo">
+            <img class="logo-img" src="img/hero-avatar.png" />
+            <p class="logo-title">LuxScintilla</p>
+            <p class="logo-sub-title">Learning Blog</p>
+          </div>
+          <div class="nav-menu">
+            <ul>
+              <li><a class="menu-link" href="#">Home</a></li>
+              <li><a class="menu-link" href="#">About Me</a></li>
+              <li><a class="menu-link" href="#">Visual Notes</a></li>
+              <li><a class="menu-link" href="#">Contact</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
-    
+      </nav>
+      <header>
+        <div class="header-container">
+          <!-- <img class="color-splash" src="img/color-splash-1.png" /> -->
+          <div class="quote-container">
+            <p class="learning-quote">Time Flies ...</p>
+            <p class="learning-quote">when you are learning</p>
+            <p class="learning-quote">JavaScript Basics</p>
+          </div>
+          <div class="social-container">
+            <a class="github-link" href="https://github.com/LuxScintilla"
+              >My GitHub</a
+            >
+          </div>
+        </div>
+      </header>
+    </div>
 
-</body>
+    <div class="main-container">
+      <div class="content-container">
+        <main>
+          <section class="card">
+            <img class="card-img" src="img/code-brackets.jpg" />
+            <p class="card-date">09 JAN <br /><span>2023</span></p>
+            <div class="completed">
+              <p>
+                <strong> Modules Completed: <br /> </strong>
+                GIT Basics &#10003;<br />
+                HTML Foundations &#10003;<br />
+                CSS Foundations &#10003;<br />
+              </p>
+            </div>
+
+            <div class="right-content">
+              <div class="text-container">
+                <h1 class="card-title">The Journey Begins</h1>
+                <hr />
+                <p>
+                  My first week I spent refreshing my memory with the basics of
+                  HTML, CSS and GIT. This time, I want to know everything
+                  properly, and the how and why of everything. I want to be able
+                  to sit down and start from a blank page to being able to code
+                  something decent myself. I am not trying to memorize
+                  everything, but rather practice with repetition.
+                </p>
+              </div>
+              <div class="collapse-container">
+                <button type="button" class="collapsible">
+                  Expand Notes <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <p>No notes for this week.</p>
+                  </div>
+                </div>
+                <button type="button" class="collapsible">
+                  Expand Links <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=DVRQoVRzMIY"
+                    >
+                      Tech With Tim: Git Tutorial for Beginners
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=LGQuIIv2RVA&list=PL4-IK0AVhVjM0xE0K2uZRvsM7LkIhsPT-"
+                    >
+                      Kevin Powell: HTML and CSS for Beginners
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=uEfH6qnFF6Y"
+                    >
+                      Kevin Powell: Margin and Padding Deep Dive
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=zGiirUiWslI"
+                    >
+                      Kevin Powell: Before and After pseudo elements explained
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=jx5jmI0UlXU"
+                    >
+                      Web Dev Simplified: Learn CSS Position In 9 Minutes
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=rIO5326FgPE"
+                    >
+                      Web Dev Simplified: Learn CSS Box Model In 8 Minutes
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <img class="card-img" src="img/flex-zombies.jpg" />
+            <p class="card-date">16 JAN <br /><span>2023</span></p>
+            <div class="completed">
+              <p>
+                <strong> Modules Completed: <br /> </strong>
+                FlexBox &#10003;<br />
+                <a href="https://luxscintilla.github.io/landing-page/"
+                  >Landing Page Project &#10003;</a
+                ><br />
+              </p>
+            </div>
+
+            <div class="right-content">
+              <div class="text-container">
+                <h1 class="card-title">Basic Positioning</h1>
+                <hr />
+                <p>
+                  Started learning Flexbox. Following the Odin tutorials and the
+                  extra ones that are given in the curriculum. Also been
+                  watching some videos on the subject to make sure my knowledge
+                  is solid. Flexbox Zombies was an awesome experience, because
+                  it really helped me make the knowledge stick. After this week
+                  I can confidently position elements on my page.
+                </p>
+              </div>
+              <div class="collapse-container">
+                <button type="button" class="collapsible">
+                  Expand Notes <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <p>No notes for this week.</p>
+                  </div>
+                </div>
+                <button type="button" class="collapsible">
+                  Expand Links <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <a
+                      class="link-otw"
+                      href="https://mastery.games/flexboxzombies/"
+                    >
+                      Mastery Games: Flex Zombies
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+                    >
+                      CSS-Tricks: A Complete Guide to Flexbox
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <img class="card-img" src="img/js-img.jpg" />
+            <p class="card-date">23 JAN <br /><span>2023</span></p>
+            <div class="completed">
+              <p>
+                <strong> Modules Completed: <br /> </strong>
+                Fundamentals Part 1: &#10003;<br />
+                Fundamentals Part 2: &#10003;<br />
+              </p>
+            </div>
+
+            <div class="right-content">
+              <div class="text-container">
+                <h1 class="card-title">Say Hello to JS</h1>
+                <hr />
+                <p>
+                  Oh boy ... has my brain been fried this week. Unlike HTML and
+                  CSS, which I had prior experience with (tiny experience but
+                  still), Javascript I have never worked with, so everything was
+                  new and scary. After the first two days of pure confusion and
+                  near panic, I started looking for extra learning sources on
+                  Youtube and Apps on my phone. There is a lot of reading of
+                  documentation and syntax.
+                </p>
+              </div>
+              <div class="collapse-container">
+                <button type="button" class="collapsible">
+                  Expand Notes <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <p>No notes for this week.</p>
+                  </div>
+                </div>
+                <button type="button" class="collapsible">
+                  Expand Links <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <a
+                      class="link-otw"
+                      href="https://www.udemy.com/course/the-complete-javascript-course/"
+                    >
+                      Jonas Schmedtmann<br />
+                      The Complete JavaScript Course 2023: From Zero to Expert!
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=hdI2bqOjy3c&t=1444s"
+                    >
+                      Playlist: Traversy Media
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=uli67N4Z03Y"
+                    >
+                      Playlist: Dani Krossing
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <img class="card-img" src="img/js-bugs.jpg" />
+            <p class="card-date">30 JAN <br /><span>2023</span></p>
+            <div class="completed">
+              <p>
+                <strong> Modules Completed: <br /> </strong>
+                Javascript Dev Tools: &#10003;<br />
+                Fundamentals Part 3: &#10003;<br />
+              </p>
+            </div>
+
+            <div class="right-content">
+              <div class="text-container">
+                <h1 class="card-title">Documentation Galore</h1>
+                <hr />
+                <p>
+                  The destruction of my brain continues. Many videos have been
+                  watched to make sure I fully understood the material. I have
+                  also found that once I tried to pretend and teach the topic,
+                  the knowledge seemed to stick a lot better. Remembering all of
+                  the new syntax is impossible at this point, the main focus is
+                  understanding. You can always google something, as long as you
+                  know how it works.
+                </p>
+              </div>
+              <div class="collapse-container">
+                <button type="button" class="collapsible">
+                  Expand Notes <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <p>No notes for this week.</p>
+                  </div>
+                </div>
+                <button type="button" class="collapsible">
+                  Expand Links <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=wRrofv4WUcU"
+                    >
+                      Monsterlessons Academy: What is DOM in 10 Minutes
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=uiv3oLsHbaI"
+                    >
+                      WhatsDev: Learn Javascript Functions
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=FioqUnOGlq8"
+                    >
+                      CS Learning: Javascript - Functions - Return
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=h33Srr5J9nY"
+                    >
+                      Web Dev Simplified: Javascript Arrow Functions
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=thXp0_py9X4&t=697s"
+                    >
+                      Colt Steele: Javascript Arrow Functions
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <aside>
+          <section class="month-selection-container">
+            <p>Articles by Month</p>
+            <a class="month" href="#">January</a>
+            <a class="month" href="#">February</a>
+            <a class="month" href="#">March</a>
+            <a class="month" href="#">April</a>
+            <a class="month" href="#">May</a>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </body>
 </html>
