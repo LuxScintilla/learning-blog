@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E Furman Learning Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="redesign.css" />
@@ -302,6 +303,156 @@
                     >
                       The Net Ninja: Git & GitHub Tutorial for Beginners #8 -
                       Branches
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <img class="card-img" src="img/webpack.png" />
+            <p class="card-date">22 MAY <br /><span>2023</span></p>
+            <div class="completed">
+              <p>
+                <strong> Modules Completed: <br /> </strong>
+                ES6 Modules &#10003;<br />
+                Webpack &#10003;<br />
+              </p>
+            </div>
+
+            <div class="right-content">
+              <div class="text-container">
+                <h1 class="card-title">Modules and Bundles</h1>
+                <hr />
+                <p>
+                  The 2 modules I done this week were daunting at the start when
+                  I just seen them for the first time. Now at the end of the
+                  week, they make sense I have gone through the tutorials
+                  provided by TOP and watched several videos on the topic on
+                  Youtube. I will from now on start using npm and webpack in
+                  this personal project too. This way I will ensure I know what
+                  I am doing otherwise I mess up everything I have created here
+                  up till now.
+                </p>
+              </div>
+              <div class="collapse-container">
+                <button type="button" class="collapsible">
+                  Expand Notes <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <p>
+                      When you install Node.js, npm comes along with it.<br />
+                      Go to <a href="https://www.npmjs.com/">npmjs.com</a> to
+                      browse for modules/packages.
+                    </p>
+                    <p class="note-p">To create the "package.json" file</p>
+                    <code> npm init -y</code>
+                    <p class="note-p">
+                      To install a new module/package as a project dependency
+                    </p>
+                    <code> npm install name-of-package --save</code>
+                    <p class="note-p">
+                      To install a new module/package as a DEV dependency, such
+                      as webpack webpack-cli
+                    </p>
+                    <code> npm install name-of-package --save-dev</code>
+                    <p class="note-p">
+                      To install only the dependencies used inside a project
+                    </p>
+                    <code> npm install --production</code>
+                    <p class="note-p">
+                      Uninstalling dependencies is easy (uninstall/remove/rm/un)
+                    </p>
+                    <code> npm uninstall name-of-module</code>
+                    <p class="note-p">
+                      Installing specific versions of modules
+                    </p>
+                    <code> npm install name-of-module@x.x.x</code>
+                    <p class="note-p">Update module to the latest version</p>
+                    <code> npm update name-of-module</code>
+                    <p class="note-p">
+                      Installing a Global Module. This does not install the
+                      module into the node_module folder in your project
+                      directory, you can check where it installs instead with
+                      the below command
+                    </p>
+                    <code>
+                      npm install -g name-of-module<br />
+                      npm root -g
+                    </code>
+                    <p class="note-p">
+                      Scripts in package.json<br />
+                      Then use command "npm run build"
+                    </p>
+                    <code>
+                      "scripts": {<br />
+                      "build": "webpack"<br />
+                      }</code
+                    >
+                    <p class="note-p">
+                      Create a file called "webpack.config.js"
+                    </p>
+                    <code>
+                      const path = require("path")<br />
+                      module.exports = {<br />
+                      mode: "development",<br />
+                      entry: {<br />
+                      bundle: path.resolve(__dirname, "src/index.js"),<br />
+                      },<br />
+                      output: {<br />
+                      path: path.resolve(__dirname, "dist"),<br />
+                      filename: "[name].js",<br />
+                      },<br />
+                      module: {<br />
+                      rules: [<br />
+                      {<br />
+                      test: /\.css$/,<br />
+                      use: ["style-loader", "css-loader"],<br />
+                      },<br />
+                      ],<br />
+                      },<br />
+                      }<br />
+                    </code>
+                  </div>
+                </div>
+                <button type="button" class="collapsible">
+                  Expand Links <img class="arrow" src="img/arrow.png" />
+                </button>
+                <div class="grow">
+                  <div class="content">
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=jHDhaSSKmB0"
+                    >
+                      Traversy Media: NPM Crash Course
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=IZGNcSuwBZs"
+                    >
+                      Traversy Media: Webpack 5 Crash Course | Frontend
+                      Development Setup
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=3On5Z0gjf4U&list=PLblA84xge2_zwxh3XJqy6UVxS60YdusY8"
+                    >
+                      Colt Steele: PlayList
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=Sf6JcMz_shU"
+                    >
+                      Jarrod Overson: What is npx? - Weekly npm package
+                      highlights
+                    </a>
+                    <a
+                      class="link-otw"
+                      href="https://www.youtube.com/watch?v=9c3dBhvtt6o"
+                    >
+                      Steve Griffith: Getting Started with Webpack 5 in 2021
                     </a>
                   </div>
                 </div>
