@@ -11,7 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="redesign.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -394,27 +398,29 @@
                     <p class="note-p">
                       Create a file called "webpack.config.js"
                     </p>
+                    <pre>
                     <code>
-                      const path = require("path")<br />
-                      module.exports = {<br />
-                      mode: "development",<br />
-                      entry: {<br />
-                      bundle: path.resolve(__dirname, "src/index.js"),<br />
-                      },<br />
-                      output: {<br />
-                      path: path.resolve(__dirname, "dist"),<br />
-                      filename: "[name].js",<br />
-                      },<br />
-                      module: {<br />
-                      rules: [<br />
-                      {<br />
-                      test: /\.css$/,<br />
-                      use: ["style-loader", "css-loader"],<br />
-                      },<br />
-                      ],<br />
-                      },<br />
-                      }<br />
+  const path = require("path")
+
+  module.exports = {
+    mode: "development",
+    entry: {
+      bundle: path.resolve(__dirname, "src/index.js"),
+    },
+    output: {
+      path: path.resolve(__dirname, "dist"),
+      filename: "[name].js",
+    },
+    module: {
+      rules: [{
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+        },
+      ],
+    },
+  }
                     </code>
+                  </pre>
                   </div>
                 </div>
                 <button type="button" class="collapsible">
@@ -463,14 +469,18 @@
         <aside>
           <section class="month-selection-container">
             <p>Articles by Month</p>
-            <a class="month" href="index.html">January</a>
-            <a class="month" href="february.html">February</a>
-            <a class="month" href="march.html">March</a>
-            <a class="month" href="april.html">April</a>
-            <a class="month" href="may.html">May</a>
+            <a class="month" href="./index.html">January</a>
+            <a class="month" href="./february.html">February</a>
+            <a class="month" href="./march.html">March</a>
+            <a class="month" href="./april.html">April</a>
+            <a class="month" href="./may.html">May</a>
           </section>
         </aside>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
