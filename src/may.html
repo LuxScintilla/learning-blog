@@ -85,7 +85,192 @@
                 </button>
                 <div class="grow">
                   <div class="content">
-                    <p>No notes for this week.</p>
+                    <p>Object Literal</p>
+                    <pre>
+                      <code>
+//Object Literal
+const me = {};
+//Object Literal is a shorthand for this
+const me = new Object();
+                      </code>
+                    </pre>
+                    <p>Add Properties to an empty Object</p>
+                    <pre>
+                      <code>
+//Empty Object
+const person = {};
+//Add Properties to the Object
+person.name = "Lux";
+person.age = 35;
+                      </code>
+                    </pre>
+                    <p>Regular Object with a Method</p>
+                    <pre>
+                      <code>
+//Regular Object
+const person = {
+  talk() {
+    return "Talking";
+  },
+};
+//Create Object from Regular Object. person is now the prototype of me.
+const me = Object.create(person);
+                      </code>
+                    </pre>
+                    <p>
+                      Regular Object with a Method, another way to create a new
+                      object by using Object.assign
+                    </p>
+                    <pre>
+                      <code>
+//Regular Object
+const person = {
+  talk() {
+    return "Talking";
+  },
+};
+//Use the Object.assign() to create a new Object, with the propeties and methods of the original Object Literal copied to the new one. This however does not do prototype.
+const me = Object.assign({}, person);
+                      </code>
+                    </pre>
+                    <p>
+                      Regular Object with Method, used to set Inheritance to
+                      another Object.
+                    </p>
+                    <pre>
+                      <code>
+//Regular Object
+const person = {
+  talk() {
+    return "Talking";
+  },
+};
+//Create Object and set Inheritance from another Object
+const me = {};
+Object.setPrototypeOf(me, person);
+                      </code>
+                    </pre>
+                    <p>
+                      Regular Object with Method being used in a Factory
+                      Function
+                    </p>
+                    <pre>
+                      <code>
+//Regular Object
+const myCoolProto = {
+  talk() {
+    return `Hello, I am ${this.name}`;
+  }
+}
+//Factory Function creates a new object, with the new object inheriting the myCoolProto properties instead of having them on the new object itself, by using the Object.create within the Factory Function
+function createPerson(name) {
+  return Object.create(myCoolProto, {
+    name: {
+      value: name
+    }
+  })
+}
+                      </code>
+                    </pre>
+                    <p>Constructor Function</p>
+                    <pre>
+                      <code>
+//Constructor Function
+function Person(name) {
+  this.name = name;
+}
+//Create Object from Constructor Function
+const me = new Person("Lux");
+//Add a Method to the Person Constructor Function, which me can then inherit from Person
+Person.prototype.talk = function () {
+  return "Talking";
+};
+//Object.prototype ... is a property on the constructor function, which means the children of that Constructor Function will inherit those properties
+//__proto__ on the child ... points to the parent object that it is inheriting from
+                      </code>
+                    </pre>
+                    <p>Constructor Function</p>
+                    <pre>
+                      <code>
+//Constructor Function 
+function Person(name) {
+  this.name = name;
+  this.age = age;
+}
+//Constructor Function written using the Object.assign()
+const Person = function(name) {
+  Object.assign(this, {name, age});
+}
+                      </code>
+                    </pre>
+                    <p>Factory Function</p>
+                    <pre>
+                      <code>
+//Factory Function
+function createPerson(name) {
+  return {
+    name: name,
+    talk() {
+      return `I am ${name}`;
+    },
+  };
+}
+//Create Object with Factory Function
+let me = createPerson("Lux");
+
+// OR By returning the object Variable
+function createAgain(name) {
+  const object = {
+    name: name,
+    talk() {
+      return `I am ${name}`;
+    },
+  };
+  return object;
+}
+//Create Object with Factory Function
+let meAgain = createAgain("Lux");
+                      </code>
+                    </pre>
+                    <p>Classes</p>
+                    <pre>
+                      <code>
+//Classes are really Constructor Functions under the hood
+//a Factory is a function that returns an object, while a Class is a template for an object
+//Using a Class
+class Person {
+  talk() {
+    return "Talking";
+  }
+}
+//Create Object from Class
+const me = new Person();
+                      </code>
+                    </pre>
+                    <p>Using a Class which also has a Constructor</p>
+                    <pre>
+                      <code>
+//Using a Class which also has a Constructor
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  talk() {
+    return "Talking";
+  }
+}
+//Create Object from Class
+const me = new Person("Lux", 35);
+//Class Extend with another Class
+class SuperHuman extends Person {
+  fly() {
+    return "Flying";
+  }
+}
+const you = new SuperHuman();
+                      </code>
+                    </pre>
                   </div>
                 </div>
                 <button type="button" class="collapsible">
@@ -400,25 +585,25 @@
                     </p>
                     <pre>
                     <code>
-  const path = require("path")
+const path = require("path")
 
-  module.exports = {
-    mode: "development",
-    entry: {
-      bundle: path.resolve(__dirname, "src/index.js"),
-    },
-    output: {
-      path: path.resolve(__dirname, "dist"),
-      filename: "[name].js",
-    },
-    module: {
-      rules: [{
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-        },
-      ],
-    },
-  }
+module.exports = {
+  mode: "development",
+  entry: {
+    bundle: path.resolve(__dirname, "src/index.js"),
+  },
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
+  },
+  module: {
+    rules: [{
+      test: /\.css$/,
+      use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
+}
                     </code>
                   </pre>
                   </div>
